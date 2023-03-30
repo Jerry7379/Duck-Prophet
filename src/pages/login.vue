@@ -1,3 +1,3 @@
 <template>
-    <div>login页</div>
+    <div></div>
 </template>
