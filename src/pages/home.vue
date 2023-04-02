@@ -42,6 +42,7 @@ export default {
     --f: 1;
     --bgOption: content-box no-repeat center/ calc(100% / var(--f)) 100%;
     --shrink: calc((var(--s) / var(--f) - var(--s)) / 2 - var(--b));
+
     width: var(--s);
     height: var(--s);
     cursor: pointer;
@@ -56,7 +57,10 @@ export default {
             var(--c1) calc(100% - var(--b)),
             var(--c1) 99%,
             transparent 100%) var(--bgOption);
-    -webkit-mask: linear-gradient(#000 0 0) no-repeat center calc(0px - var(--shrink)) / calc(100% / var(--f) - 2 * var(--b)) 50%,
+    -webkit-mask:
+        linear-gradient(#000 0 0) 
+        no-repeat center 
+        calc(1px - var(--shrink)) / calc(100% / var(--f) - 2 * var(--b) - 1px) 50%,
         radial-gradient(circle closest-side, #000 99%, transparent) var(--bgOption);
 }
 
