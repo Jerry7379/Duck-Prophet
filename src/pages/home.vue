@@ -47,7 +47,7 @@ export default {
     height: var(--s);
     cursor: pointer;
     transition: scale(var(--f));
-    padding-top: 50px;
+    padding-top: 5px;
     outline: var(--b) solid var(--c1);
     outline-offset: var(--shrink);
     border-radius: 0 0 999px 999px;
